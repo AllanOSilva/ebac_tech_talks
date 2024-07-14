@@ -16,15 +16,22 @@
     &--backend{
         background-image: linear-gradient( variables.$yellow, variables.$pink);
     }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
     // background-color: green;
     .container{
         display: flex;
+        gap: 40px;
     }
     &__image{
         max-width: 360px;
     }
     &__details{
-        margin-right:40px;
+        
         &__title{
             margin-bottom:16px;
             font-size: 18px;
